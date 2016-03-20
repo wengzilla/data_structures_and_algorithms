@@ -213,7 +213,7 @@ but you could in theory use an even larger factor if needed.
 This branching factor allows us to store a large amount of keys and values
 in a relatively shallow tree which will still be very quick to traverse.
 
-For example in just 6 layers, we could store `33,554,432` (`32 ** 5`, assuming
+For example in just 6 layers, we could store `34,636,833` (`32 ** 5 + 32 ** 4 + 32 ** 3 + 32 ** 2 + 32 ** 1 + 32 ** 0`, assuming
 the root only stores 1 pair) keys and values.
 
 This means that in reality, the performance of our Tree will be logarithmic,
